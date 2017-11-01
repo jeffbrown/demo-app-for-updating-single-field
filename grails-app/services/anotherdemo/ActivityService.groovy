@@ -9,5 +9,5 @@ interface ActivityService {
     List<Activity> findAll()
 
     @Query("UPDATE ${Activity activity} SET ${activity.state} = $state WHERE activity.id = $id")
-    Activity updateState(String state, Long id)
+    Number updateState(String state, Long id)
 }

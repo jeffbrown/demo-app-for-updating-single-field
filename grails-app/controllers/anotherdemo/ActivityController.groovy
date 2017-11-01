@@ -9,7 +9,7 @@ class ActivityController {
     }
 
     def updateState(Long id) {
-        Activity activity = activityService.updateState('notified', id)
+        activityService.updateState('notified', id)
 
         flash.message = 'Updated'
         redirect action: 'index'
